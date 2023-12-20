@@ -1,6 +1,7 @@
 It is a simple Timer to remind PC users to view any object 20 feet away for 20 seconds every 20 minutes. It helps relax eye muscles and improve vision.
 
-HOW TO RUNN THIS APP WINDOWS STARTUP
+HOW TO RUN THIS APP ON WINDOWS STARTUP:
+
 To run your VB.NET application on startup in Windows 10, you can add an entry to the Windows Registry. Here are the steps:
 
 Create a Shortcut for your VB.NET Application:
