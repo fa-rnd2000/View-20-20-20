@@ -22,46 +22,63 @@ Partial Class Time_View
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.SuspendLayout()
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 1000
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.MediumSpringGreen
-        Me.Label1.Location = New System.Drawing.Point(3, 3)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(192, 54)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "EYE REST"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Time_View
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(246, 69)
-        Me.Controls.Add(Me.Label1)
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
-        Me.Name = "Time_View"
-        Me.Opacity = 0.8R
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
-        Me.Text = "Time View"
-        Me.TopMost = True
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        components = New ComponentModel.Container()
+        Timer1 = New Timer(components)
+        Label1 = New Label()
+        Label2 = New Label()
+        SuspendLayout()
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        Timer1.Interval = 1000
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.ForeColor = Color.MediumSpringGreen
+        Label1.Location = New Point(3, 3)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(192, 54)
+        Label1.TabIndex = 0
+        Label1.Text = "EYE REST"
+        Label1.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.ForeColor = Color.MediumSpringGreen
+        Label2.Location = New Point(12, 52)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(128, 60)
+        Label2.TabIndex = 1
+        Label2.Text = "Time"
+        Label2.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Time_View
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.WindowFrame
+        ClientSize = New Size(259, 118)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
+        FormBorderStyle = FormBorderStyle.None
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "Time_View"
+        Opacity = 0.9R
+        StartPosition = FormStartPosition.Manual
+        Text = "Time View"
+        TopMost = True
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
